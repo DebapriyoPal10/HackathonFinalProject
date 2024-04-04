@@ -1,0 +1,860 @@
+<html>
+<head>
+<title>TestNG:  chromeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>chromeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/16/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 20 21:20:40 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>296 seconds (296676 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.TC_3_13_LoanAmtCalculator_ValidatingEMITextBox.validatingValidatingEMITextBox()'><b>validatingValidatingEMITextBox</b><br>Test class: testCases.TC_3_13_LoanAmtCalculator_ValidatingEMITextBox</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_13_LoanAmtCalculator_ValidatingEMITextBox.validatingValidatingEMITextBox(TC_3_13_LoanAmtCalculator_ValidatingEMITextBox.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2079440883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2079440883'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_13_LoanAmtCalculator_ValidatingEMITextBox.validatingValidatingEMITextBox(TC_3_13_LoanAmtCalculator_ValidatingEMITextBox.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>1</td>
+<td>testCases.TC_3_13_LoanAmtCalculator_ValidatingEMITextBox@2767e23c</td></tr>
+<tr>
+<td title='testCases.TC_3_22_LoanAmtCalculator_ValidatingFeesAndChargesTextBox.validateFeesAndChargesTextBox()'><b>validateFeesAndChargesTextBox</b><br>Test class: testCases.TC_3_22_LoanAmtCalculator_ValidatingFeesAndChargesTextBox</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_22_LoanAmtCalculator_ValidatingFeesAndChargesTextBox.validateFeesAndChargesTextBox(TC_3_22_LoanAmtCalculator_ValidatingFeesAndChargesTextBox.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace122508047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace122508047'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_22_LoanAmtCalculator_ValidatingFeesAndChargesTextBox.validateFeesAndChargesTextBox(TC_3_22_LoanAmtCalculator_ValidatingFeesAndChargesTextBox.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>1</td>
+<td>testCases.TC_3_22_LoanAmtCalculator_ValidatingFeesAndChargesTextBox@5b247367</td></tr>
+<tr>
+<td title='testCases.TC_3_25_LoanTenureCalculator_ValidatingLoanAmountTextBox.validateLoanAmountTextBox()'><b>validateLoanAmountTextBox</b><br>Test class: testCases.TC_3_25_LoanTenureCalculator_ValidatingLoanAmountTextBox</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_25_LoanTenureCalculator_ValidatingLoanAmountTextBox.validateLoanAmountTextBox(TC_3_25_LoanTenureCalculator_ValidatingLoanAmountTextBox.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1134719686", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1134719686'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_25_LoanTenureCalculator_ValidatingLoanAmountTextBox.validateLoanAmountTextBox(TC_3_25_LoanTenureCalculator_ValidatingLoanAmountTextBox.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>2</td>
+<td>testCases.TC_3_25_LoanTenureCalculator_ValidatingLoanAmountTextBox@7e057f43</td></tr>
+<tr>
+<td title='testCases.TC_3_31_LoanTenureCalculator_ValidatingInterestRateTextBox.validateInterestRateTextBox()'><b>validateInterestRateTextBox</b><br>Test class: testCases.TC_3_31_LoanTenureCalculator_ValidatingInterestRateTextBox</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_31_LoanTenureCalculator_ValidatingInterestRateTextBox.validateInterestRateTextBox(TC_3_31_LoanTenureCalculator_ValidatingInterestRateTextBox.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1128606145", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1128606145'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_31_LoanTenureCalculator_ValidatingInterestRateTextBox.validateInterestRateTextBox(TC_3_31_LoanTenureCalculator_ValidatingInterestRateTextBox.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>1</td>
+<td>testCases.TC_3_31_LoanTenureCalculator_ValidatingInterestRateTextBox@7c137fd5</td></tr>
+<tr>
+<td title='testCases.TC_1_01_ParsingRequiredValuesToTheRespectiveFields.parseDatas()'><b>parseDatas</b><br>Test class: testCases.TC_1_01_ParsingRequiredValuesToTheRespectiveFields</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_1_01_ParsingRequiredValuesToTheRespectiveFields.parseDatas(TC_1_01_ParsingRequiredValuesToTheRespectiveFields.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1274192343", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1274192343'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_1_01_ParsingRequiredValuesToTheRespectiveFields.parseDatas(TC_1_01_ParsingRequiredValuesToTheRespectiveFields.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>3</td>
+<td>testCases.TC_1_01_ParsingRequiredValuesToTheRespectiveFields@606e4010</td></tr>
+<tr>
+<td title='testCases.TC_3_05_EMICalculator_ValidatingInterestRateSlider.validateInterestRateSlider()'><b>validateInterestRateSlider</b><br>Test class: testCases.TC_3_05_EMICalculator_ValidatingInterestRateSlider</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_05_EMICalculator_ValidatingInterestRateSlider.validateInterestRateSlider(TC_3_05_EMICalculator_ValidatingInterestRateSlider.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace152926490", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace152926490'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_05_EMICalculator_ValidatingInterestRateSlider.validateInterestRateSlider(TC_3_05_EMICalculator_ValidatingInterestRateSlider.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>2</td>
+<td>testCases.TC_3_05_EMICalculator_ValidatingInterestRateSlider@5524cca1</td></tr>
+<tr>
+<td title='testCases.TC_3_09_EMICalculator_IntegressionTestingForLoanTenureTextBoxAndSlider.validatingDataFlowBetweenLoanTenureSliderAndTextBox()'><b>validatingDataFlowBetweenLoanTenureSliderAndTextBox</b><br>Test class: testCases.TC_3_09_EMICalculator_IntegressionTestingForLoanTenureTextBoxAndSlider</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_09_EMICalculator_IntegressionTestingForLoanTenureTextBoxAndSlider.validatingDataFlowBetweenLoanTenureSliderAndTextBox(TC_3_09_EMICalculator_IntegressionTestingForLoanTenureTextBoxAndSlider.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1075075772", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1075075772'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_09_EMICalculator_IntegressionTestingForLoanTenureTextBoxAndSlider.validatingDataFlowBetweenLoanTenureSliderAndTextBox(TC_3_09_EMICalculator_IntegressionTestingForLoanTenureTextBoxAndSlider.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>2</td>
+<td>testCases.TC_3_09_EMICalculator_IntegressionTestingForLoanTenureTextBoxAndSlider@4681c175</td></tr>
+<tr>
+<td title='testCases.TC_3_14_LoanAmtCalculator_ValidatingEMISlider.validatingEMISlider()'><b>validatingEMISlider</b><br>Test class: testCases.TC_3_14_LoanAmtCalculator_ValidatingEMISlider</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_14_LoanAmtCalculator_ValidatingEMISlider.validatingEMISlider(TC_3_14_LoanAmtCalculator_ValidatingEMISlider.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1758066502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1758066502'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_14_LoanAmtCalculator_ValidatingEMISlider.validatingEMISlider(TC_3_14_LoanAmtCalculator_ValidatingEMISlider.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>2</td>
+<td>testCases.TC_3_14_LoanAmtCalculator_ValidatingEMISlider@710c2b53</td></tr>
+<tr>
+<td title='testCases.TC_3_32_LoanTenureCalculator_ValidatingInterestRateSlider.validatingInterestRateSlider()'><b>validatingInterestRateSlider</b><br>Test class: testCases.TC_3_32_LoanTenureCalculator_ValidatingInterestRateSlider</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_32_LoanTenureCalculator_ValidatingInterestRateSlider.validatingInterestRateSlider(TC_3_32_LoanTenureCalculator_ValidatingInterestRateSlider.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1736422032", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1736422032'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_32_LoanTenureCalculator_ValidatingInterestRateSlider.validatingInterestRateSlider(TC_3_32_LoanTenureCalculator_ValidatingInterestRateSlider.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>2</td>
+<td>testCases.TC_3_32_LoanTenureCalculator_ValidatingInterestRateSlider@183ec003</td></tr>
+<tr>
+<td title='testCases.TC_3_30_LoanTenureCalculator_IntegressionTestingForEMITextBoxAndSlider.validatingDataFlowBetweenEMISliderAndTextBox()'><b>validatingDataFlowBetweenEMISliderAndTextBox</b><br>Test class: testCases.TC_3_30_LoanTenureCalculator_IntegressionTestingForEMITextBoxAndSlider</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_30_LoanTenureCalculator_IntegressionTestingForEMITextBoxAndSlider.validatingDataFlowBetweenEMISliderAndTextBox(TC_3_30_LoanTenureCalculator_IntegressionTestingForEMITextBoxAndSlider.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1610097768", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1610097768'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_30_LoanTenureCalculator_IntegressionTestingForEMITextBoxAndSlider.validatingDataFlowBetweenEMISliderAndTextBox(TC_3_30_LoanTenureCalculator_IntegressionTestingForEMITextBoxAndSlider.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>2</td>
+<td>testCases.TC_3_30_LoanTenureCalculator_IntegressionTestingForEMITextBoxAndSlider@231f98ef</td></tr>
+<tr>
+<td title='testCases.TC_3_15_LoanAmtCalculator_IntegressionTestingForEMITextBoxAndSlider.validatingDataFlowBetweenEMISliderAndTextBox()'><b>validatingDataFlowBetweenEMISliderAndTextBox</b><br>Test class: testCases.TC_3_15_LoanAmtCalculator_IntegressionTestingForEMITextBoxAndSlider</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_15_LoanAmtCalculator_IntegressionTestingForEMITextBoxAndSlider.validatingDataFlowBetweenEMISliderAndTextBox(TC_3_15_LoanAmtCalculator_IntegressionTestingForEMITextBoxAndSlider.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1862883096", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1862883096'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_15_LoanAmtCalculator_IntegressionTestingForEMITextBoxAndSlider.validatingDataFlowBetweenEMISliderAndTextBox(TC_3_15_LoanAmtCalculator_IntegressionTestingForEMITextBoxAndSlider.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>3</td>
+<td>testCases.TC_3_15_LoanAmtCalculator_IntegressionTestingForEMITextBoxAndSlider@5386659f</td></tr>
+<tr>
+<td title='testCases.TC_3_28_LoanTenureCalculator_ValidatingEMITextBox.validatingValidatingEMITextBox()'><b>validatingValidatingEMITextBox</b><br>Test class: testCases.TC_3_28_LoanTenureCalculator_ValidatingEMITextBox</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_28_LoanTenureCalculator_ValidatingEMITextBox.validatingValidatingEMITextBox(TC_3_28_LoanTenureCalculator_ValidatingEMITextBox.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace603565387", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace603565387'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_28_LoanTenureCalculator_ValidatingEMITextBox.validatingValidatingEMITextBox(TC_3_28_LoanTenureCalculator_ValidatingEMITextBox.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>1</td>
+<td>testCases.TC_3_28_LoanTenureCalculator_ValidatingEMITextBox@6440112d</td></tr>
+<tr>
+<td title='testCases.TC_3_10_EMICalculator_ValidatingFeesAndChargesTextBox.validateFeesAndChargesTextBox()'><b>validateFeesAndChargesTextBox</b><br>Test class: testCases.TC_3_10_EMICalculator_ValidatingFeesAndChargesTextBox</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_10_EMICalculator_ValidatingFeesAndChargesTextBox.validateFeesAndChargesTextBox(TC_3_10_EMICalculator_ValidatingFeesAndChargesTextBox.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace835606109", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace835606109'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_10_EMICalculator_ValidatingFeesAndChargesTextBox.validateFeesAndChargesTextBox(TC_3_10_EMICalculator_ValidatingFeesAndChargesTextBox.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>1</td>
+<td>testCases.TC_3_10_EMICalculator_ValidatingFeesAndChargesTextBox@57a78e3</td></tr>
+<tr>
+<td title='testCases.TC_3_18_LoanAmtCalculator_IntegressionTestingForInterestRateTextBoxAndSlider.validatingDataFlowBetweenInterestRateSliderAndTextBox()'><b>validatingDataFlowBetweenInterestRateSliderAndTextBox</b><br>Test class: testCases.TC_3_18_LoanAmtCalculator_IntegressionTestingForInterestRateTextBoxAndSlider</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_18_LoanAmtCalculator_IntegressionTestingForInterestRateTextBoxAndSlider.validatingDataFlowBetweenInterestRateSliderAndTextBox(TC_3_18_LoanAmtCalculator_IntegressionTestingForInterestRateTextBoxAndSlider.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1512932602", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1512932602'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_18_LoanAmtCalculator_IntegressionTestingForInterestRateTextBoxAndSlider.validatingDataFlowBetweenInterestRateSliderAndTextBox(TC_3_18_LoanAmtCalculator_IntegressionTestingForInterestRateTextBoxAndSlider.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>1</td>
+<td>testCases.TC_3_18_LoanAmtCalculator_IntegressionTestingForInterestRateTextBoxAndSlider@1caa0244</td></tr>
+<tr>
+<td title='testCases.TC_3_07_EMICalculator_ValidatingLoanTenureTextBox.validateLoanTenureTextBox()'><b>validateLoanTenureTextBox</b><br>Test class: testCases.TC_3_07_EMICalculator_ValidatingLoanTenureTextBox</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_07_EMICalculator_ValidatingLoanTenureTextBox.validateLoanTenureTextBox(TC_3_07_EMICalculator_ValidatingLoanTenureTextBox.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace374371789", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace374371789'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_3_07_EMICalculator_ValidatingLoanTenureTextBox.validateLoanTenureTextBox(TC_3_07_EMICalculator_ValidatingLoanTenureTextBox.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>1</td>
+<td>testCases.TC_3_07_EMICalculator_ValidatingLoanTenureTextBox@48bb62</td></tr>
+<tr>
+<td title='testCases.TC_2_01_StoringTheYearTableInTheExcel.storeTable()'><b>storeTable</b><br>Test class: testCases.TC_2_01_StoringTheYearTableInTheExcel</td>
+<td><div><pre>java.lang.AssertionError: null
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_2_01_StoringTheYearTableInTheExcel.storeTable(TC_2_01_StoringTheYearTableInTheExcel.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1710076083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1710076083'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at utilities.Assertions.fail(Assertions.java:13)
+	at testCases.TC_2_01_StoringTheYearTableInTheExcel.storeTable(TC_2_01_StoringTheYearTableInTheExcel.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>3</td>
+<td>testCases.TC_2_01_StoringTheYearTableInTheExcel@413d1baf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.TC_3_12_EMICalculator_IntegressionTestingForFeesAndChargesTextBoxAndSlider.validatingDataFlowBetweenFeesAndChargesSliderAndTextBox()'><b>validatingDataFlowBetweenFeesAndChargesSliderAndTextBox</b><br>Test class: testCases.TC_3_12_EMICalculator_IntegressionTestingForFeesAndChargesTextBoxAndSlider</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_3_12_EMICalculator_IntegressionTestingForFeesAndChargesTextBoxAndSlider@6fa51cd4</td></tr>
+<tr>
+<td title='testCases.TC_3_02_EMICalculator_ValidatingLoanAmountSlider.validateLoanAmountSlider()'><b>validateLoanAmountSlider</b><br>Test class: testCases.TC_3_02_EMICalculator_ValidatingLoanAmountSlider</td>
+<td></td>
+<td>1</td>
+<td>testCases.TC_3_02_EMICalculator_ValidatingLoanAmountSlider@273444fe</td></tr>
+<tr>
+<td title='testCases.TC_3_27_LoanTenureCalculator_IntegressionTestingForLoanAmountTextBoxAndSlider.validatingDataFlowBetweenLoanAmountSliderAndTextBox()'><b>validatingDataFlowBetweenLoanAmountSliderAndTextBox</b><br>Test class: testCases.TC_3_27_LoanTenureCalculator_IntegressionTestingForLoanAmountTextBoxAndSlider</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_3_27_LoanTenureCalculator_IntegressionTestingForLoanAmountTextBoxAndSlider@5890e879</td></tr>
+<tr>
+<td title='testCases.TC_3_34_LoanTenureCalculator_ValidatingFeesAndChargesTextBox.validateFeesAndChargesTextBox()'><b>validateFeesAndChargesTextBox</b><br>Test class: testCases.TC_3_34_LoanTenureCalculator_ValidatingFeesAndChargesTextBox</td>
+<td></td>
+<td>1</td>
+<td>testCases.TC_3_34_LoanTenureCalculator_ValidatingFeesAndChargesTextBox@221a3fa4</td></tr>
+<tr>
+<td title='testCases.TC_3_03_EMICalculator_IntegressionTestingForLoanAmountTextBoxAndSlider.validatingDataFlowBetweenLoanAmountSliderAndTextBox()'><b>validatingDataFlowBetweenLoanAmountSliderAndTextBox</b><br>Test class: testCases.TC_3_03_EMICalculator_IntegressionTestingForLoanAmountTextBoxAndSlider</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_3_03_EMICalculator_IntegressionTestingForLoanAmountTextBoxAndSlider@33bc72d1</td></tr>
+<tr>
+<td title='testCases.TC_3_01_EMICalculator_ValidatingLoanAmountTextBox.validateLoanAmountTextBox()'><b>validateLoanAmountTextBox</b><br>Test class: testCases.TC_3_01_EMICalculator_ValidatingLoanAmountTextBox</td>
+<td></td>
+<td>0</td>
+<td>testCases.TC_3_01_EMICalculator_ValidatingLoanAmountTextBox@16eb3ea3</td></tr>
+<tr>
+<td title='testCases.TC_3_04_EMICalculator_ValidatingInterestRateTextBox.validateInterestRateTextBox()'><b>validateInterestRateTextBox</b><br>Test class: testCases.TC_3_04_EMICalculator_ValidatingInterestRateTextBox</td>
+<td></td>
+<td>1</td>
+<td>testCases.TC_3_04_EMICalculator_ValidatingInterestRateTextBox@1a75e76a</td></tr>
+<tr>
+<td title='testCases.TC_3_26_LoanTenureCalculator_ValidatingLoanAmountSlider.validateLoanAmountSlider()'><b>validateLoanAmountSlider</b><br>Test class: testCases.TC_3_26_LoanTenureCalculator_ValidatingLoanAmountSlider</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_3_26_LoanTenureCalculator_ValidatingLoanAmountSlider@6c284af</td></tr>
+<tr>
+<td title='testCases.TC_3_20_LoanAmtCalculator_ValidatingLoanTenureSlider.validateLoanTenureSlider()'><b>validateLoanTenureSlider</b><br>Test class: testCases.TC_3_20_LoanAmtCalculator_ValidatingLoanTenureSlider</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_3_20_LoanAmtCalculator_ValidatingLoanTenureSlider@7ce69770</td></tr>
+<tr>
+<td title='testCases.TC_1_02_DisplayingTheEMIPaymentTable.displayResult()'><b>displayResult</b><br>Test class: testCases.TC_1_02_DisplayingTheEMIPaymentTable</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_1_02_DisplayingTheEMIPaymentTable@645aa696</td></tr>
+<tr>
+<td title='testCases.TC_3_19_LoanAmtCalculator_ValidatingLoanTenureTextBox.validateLoanTenureTextBox()'><b>validateLoanTenureTextBox</b><br>Test class: testCases.TC_3_19_LoanAmtCalculator_ValidatingLoanTenureTextBox</td>
+<td></td>
+<td>1</td>
+<td>testCases.TC_3_19_LoanAmtCalculator_ValidatingLoanTenureTextBox@7ce026d3</td></tr>
+<tr>
+<td title='testCases.TC_3_36_LoanTenure_CalculatorIntegressionTestingForFeesAndChargesTextBoxAndSlider.validatingDataFlowBetweenFeesAndChargesSliderAndTextBox()'><b>validatingDataFlowBetweenFeesAndChargesSliderAndTextBox</b><br>Test class: testCases.TC_3_36_LoanTenure_CalculatorIntegressionTestingForFeesAndChargesTextBoxAndSlider</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_3_36_LoanTenure_CalculatorIntegressionTestingForFeesAndChargesTextBoxAndSlider@2b40ff9c</td></tr>
+<tr>
+<td title='testCases.TC_3_35_LoanTenureCalculator_ValidatingFeesAndChargesSlider.validateFeesAndChargesSlider()'><b>validateFeesAndChargesSlider</b><br>Test class: testCases.TC_3_35_LoanTenureCalculator_ValidatingFeesAndChargesSlider</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_3_35_LoanTenureCalculator_ValidatingFeesAndChargesSlider@451001e5</td></tr>
+<tr>
+<td title='testCases.TC_3_21_LoanAmtCalculator_IntegressionTestingForLoanTenureTextBoxAndSlider.validatingDataFlowBetweenLoanTenureSliderAndTextBox()'><b>validatingDataFlowBetweenLoanTenureSliderAndTextBox</b><br>Test class: testCases.TC_3_21_LoanAmtCalculator_IntegressionTestingForLoanTenureTextBoxAndSlider</td>
+<td></td>
+<td>4</td>
+<td>testCases.TC_3_21_LoanAmtCalculator_IntegressionTestingForLoanTenureTextBoxAndSlider@1750fbeb</td></tr>
+<tr>
+<td title='testCases.TC_3_06_EMICalculator_IntegressionTestingForInterestRateTextBoxAndSlider.validatingDataFlowBetweenInterestRateSliderAndTextBox()'><b>validatingDataFlowBetweenInterestRateSliderAndTextBox</b><br>Test class: testCases.TC_3_06_EMICalculator_IntegressionTestingForInterestRateTextBoxAndSlider</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_3_06_EMICalculator_IntegressionTestingForInterestRateTextBoxAndSlider@5032714f</td></tr>
+<tr>
+<td title='testCases.TC_3_33_LoanTenureCalculator_IntegressionTestingForInterestRateTextBoxAndSlider.validateDataFlowBetweenInterestRateSliderAndTextBox()'><b>validateDataFlowBetweenInterestRateSliderAndTextBox</b><br>Test class: testCases.TC_3_33_LoanTenureCalculator_IntegressionTestingForInterestRateTextBoxAndSlider</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_3_33_LoanTenureCalculator_IntegressionTestingForInterestRateTextBoxAndSlider@7d9d0818</td></tr>
+<tr>
+<td title='testCases.TC_3_08_EMICalculator_ValidatingLoanTenureSlider.validateLoanTenureSlider()'><b>validateLoanTenureSlider</b><br>Test class: testCases.TC_3_08_EMICalculator_ValidatingLoanTenureSlider</td>
+<td></td>
+<td>1</td>
+<td>testCases.TC_3_08_EMICalculator_ValidatingLoanTenureSlider@353352b6</td></tr>
+<tr>
+<td title='testCases.TC_3_23_LoanAmtCalculator_ValidatingFeesAndChargesSlider.validateFeesAndChargesSlider()'><b>validateFeesAndChargesSlider</b><br>Test class: testCases.TC_3_23_LoanAmtCalculator_ValidatingFeesAndChargesSlider</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_3_23_LoanAmtCalculator_ValidatingFeesAndChargesSlider@268f106e</td></tr>
+<tr>
+<td title='testCases.TC_3_29_LoanTenureCalculator_ValidatingEMISlider.validatingEMISlider()'><b>validatingEMISlider</b><br>Test class: testCases.TC_3_29_LoanTenureCalculator_ValidatingEMISlider</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_3_29_LoanTenureCalculator_ValidatingEMISlider@31ea9581</td></tr>
+<tr>
+<td title='testCases.TC_3_16_LoanAmtCalculator_ValidatingInterestRateTextBox.validateInterestRateTextBox()'><b>validateInterestRateTextBox</b><br>Test class: testCases.TC_3_16_LoanAmtCalculator_ValidatingInterestRateTextBox</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_3_16_LoanAmtCalculator_ValidatingInterestRateTextBox@14028087</td></tr>
+<tr>
+<td title='testCases.TC_3_11_EMICalculator_ValidatingFeesAndChargesSlider.validateFeesAndChargesSlider()'><b>validateFeesAndChargesSlider</b><br>Test class: testCases.TC_3_11_EMICalculator_ValidatingFeesAndChargesSlider</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_3_11_EMICalculator_ValidatingFeesAndChargesSlider@402c4085</td></tr>
+<tr>
+<td title='testCases.TC_3_24_LoanAmtCalculator_IntegressionTestingForFeesAndChargesTextBoxAndSlider.validatingDataFlowBetweenFeesAndChargesSliderAndTextBox()'><b>validatingDataFlowBetweenFeesAndChargesSliderAndTextBox</b><br>Test class: testCases.TC_3_24_LoanAmtCalculator_IntegressionTestingForFeesAndChargesTextBoxAndSlider</td>
+<td></td>
+<td>4</td>
+<td>testCases.TC_3_24_LoanAmtCalculator_IntegressionTestingForFeesAndChargesTextBoxAndSlider@6e9a5ed8</td></tr>
+<tr>
+<td title='testCases.TC_3_17_LoanAmtCalculator_ValidatingInterestRateSlider.validatingDataFlowBetweenInterestRateSliderAndTextBox()'><b>validatingDataFlowBetweenInterestRateSliderAndTextBox</b><br>Test class: testCases.TC_3_17_LoanAmtCalculator_ValidatingInterestRateSlider</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_3_17_LoanAmtCalculator_ValidatingInterestRateSlider@cecf639</td></tr>
+</table><p>
+</body>
+</html>

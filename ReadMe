@@ -1,0 +1,92 @@
+Name - Debapriyo Pal
+Employee ID - 2318212
+Role - CSD Trainee in Quality Engineer Assurance in Java Selenium
+Cohort Code - CSDQEA24QE006
+
+Find the Interest Amount for current year
+Problem Statement : Find the Interest Amount for current year
+1. Buying a  car of 15 Lac
+2. Interest rate of 9.5%
+3. Tenure should be 1 year.
+Display the interest amount & principal amount of first month.
+(Suggested Site: emicalculator.net  / HDFCbank.com etc. however you are free to use any other legitimate site)
+Detailed Description: Hackathon Ideas
+1. Find the EMI for Car with price of 15 Lac, Interest rate of 9.5% & Tenure 1 year; Display the interest amount & principal amount for one month
+2. From Menu, pick Home Loan EMI Calculator, fill relevant details & extract all the data from  year on year table & store in excel;
+3. From Menu, pick Loan Calculator and under EMI calculator, do all UI check for text box & scales; change the Loan tenure for year & month,check the change in scale; Re-use the same validation for Loan Amount Calculator & Loan Tenure Calculator
+(Suggested Site: emicalculator.net  however you are free to use any other legitimate site)
+
+appUrl - https://emicalculator.net/
+
+Test Cases For the above Deliverables are--
+
+For Interest Amount of Current Year Page---
+1. TC_1_01_ParsingRequiredValuesToTheRespectiveFields
+2. TC_1_02_DisplayingTheEMIPaymentTable
+
+For Home Loan EMI Calculator Page---
+3. TC_2_01_StoringTheYearTableInTheExcel
+
+For Loan Calculator Page---
+4. TC_3_01_EMICalculator_ValidatingLoanAmountTextBox
+5. TC_3_02_EMICalculator_ValidatingLoanAmountSlider
+6. TC_3_03_EMICalculator_IntegressionTestingForLoanAmountTextBoxAndSlider
+7. TC_3_04_EMICalculator_ValidatingInterestRateTextBox
+8. TC_3_05_EMICalculator_ValidatingInterestRateSlider
+9. TC_3_06_EMICalculator_IntegressionTestingForInterestRateTextBoxAndSlider
+10. TC_3_07_EMICalculator_ValidatingLoanTenureTextBox
+11. TC_3_08_EMICalculator_ValidatingLoanTenureSlider
+12. TC_3_09_EMICalculator_IntegressionTestingForLoanTenureTextBoxAndSlider
+13. TC_3_10_EMICalculator_ValidatingFeesAndChargesTextBox
+14. TC_3_11_EMICalculator_ValidatingFeesAndChargesSlider
+15. TC_3_12_EMICalculator_IntegressionTestingForFeesAndChargesTextBoxAndSlider
+16. TC_3_13_LoanAmtCalculator_ValidatingEMITextBox
+17. TC_3_14_LoanAmtCalculator_ValidatingEMISlider
+18. TC_3_15_LoanAmtCalculator_IntegressionTestingForEMITextBoxAndSlider
+19. TC_3_16_LoanAmtCalculator_ValidatingInterestRateTextBox
+20. TC_3_17_LoanAmtCalculator_ValidatingInterestRateSlider
+21. TC_3_18_LoanAmtCalculator_IntegressionTestingForInterestRateTextBoxAndSlider
+22. TC_3_19_LoanAmtCalculator_ValidatingLoanTenureTextBox
+23. TC_3_20_LoanAmtCalculator_ValidatingLoanTenureSlider
+24. TC_3_21_LoanAmtCalculator_IntegressionTestingForLoanTenureTextBoxAndSlider
+25. TC_3_22_LoanAmtCalculator_ValidatingFeesAndChargesTextBox
+26. TC_3_23_LoanAmtCalculator_ValidatingFeesAndChargesSlider
+27. TC_3_24_LoanAmtCalculator_IntegressionTestingForFeesAndChargesTextBoxAndSlider
+28. TC_3_25_LoanTenureCalculator_ValidatingLoanAmountTextBox
+29. TC_3_26_LoanTenureCalculator_ValidatingLoanAmountSlider
+30. TC_3_27_LoanTenureCalculator_IntegressionTestingForLoanAmountTextBoxAndSlider
+31. TC_3_28_LoanTenureCalculator_ValidatingEMITextBox
+32. TC_3_29_LoanTenureCalculator_ValidatingEMISlider
+33. TC_3_30_LoanTenureCalculator_IntegressionTestingForEMITextBoxAndSlider
+34. TC_3_31_LoanTenureCalculator_ValidatingInterestRateTextBox
+35. TC_3_32_LoanTenureCalculator_ValidatingInterestRateSlider
+36. TC_3_33_LoanTenureCalculator_IntegressionTestingForInterestRateTextBoxAndSlider
+37. TC_3_34_LoanTenureCalculator_ValidatingFeesAndChargesTextBox
+38. TC_3_35_LoanTenureCalculator_ValidatingFeesAndChargesSlider
+39. TC_3_36_LoanTenure_CalculatorIntegressionTestingForFeesAndChargesTextBoxAndSlider
+40. TC_3_37_IntegrationTestingForYearAndMonthOption
+
+Utility Classes---
+1. AddFluentWait.java - For adding fluent wait for various components and conditions
+2. ExcelUtils.java - For Storing asked data in Excel sheet from the WebPage
+3. Assertions.java - For applying the assertions to the test Cases
+4. ExtentReportManager.java - For Generating Extent report
+
+
+Defects Found---
+1. DF_01 - Generated against TC_3_15_LoanAmtCalculator_IntegressionTestingForEMITextBoxAndSlider
+           The EMI Text Box is not working properly, while sliding the value is showing as 50,000.00 but after a few ms
+           it is getting changed to some random values.
+           
+2. DF_02 - Generated against TC_3_30_LoanTenureCalculator_IntegressionTestingForEMITextBoxAndSlider
+           The EMI Text Box is not working properly, while sliding the value is showing as 50,000.00 but after a few ms
+           it is getting changed to some random values.          
+           
+           
+Technologies Used---
+1. Java Programming Language
+2. Selenium Automation Tool
+3. TestNG Framework
+4. AventStack
+5. Apache Log4j
+6. Apache POI(Poor Obfuscation Implementation) 
